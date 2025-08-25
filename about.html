@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — FundMentor</title>
+  <meta name="description" content="About FundMentor — our purpose, who we serve, and the team behind the product.">
+  <link rel="canonical" href="https://saadbashir91.github.io/about.html">
+  <style>
+  :root { --bg:#0b1220; --ink:#0f172a; --text:#0f172a; --muted:#475569; --brand:#2563eb; --brand2:#10b981; --card:#ffffff; }
+  *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;background:#f8fafc}
+  a{color:var(--brand);text-decoration:none}
+  header{position:sticky;top:0;background:#ffffffee;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e2e8f0;z-index:10}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  nav .logo{font-weight:800;letter-spacing:.2px}
+  nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+  nav a.btn{padding:10px 14px;border-radius:10px;background:var(--brand);color:#fff;font-weight:600}
+  .hero{padding:72px 0 36px;background:linear-gradient(180deg,#ffffff, #f1f5f9)}
+  .hero h1{font-size:42px;line-height:1.15;margin:0 0 10px}
+  .hero p{font-size:18px;color:#334155;max-width:680px}
+  .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+  .cta a{padding:12px 16px;border-radius:12px;font-weight:700}
+  .cta .primary{background:var(--brand);color:#fff}
+  .cta .ghost{border:1px solid #cbd5e1;color:#0f172a}
+  section{padding:56px 0;border-top:1px solid #e2e8f0;background:#fff}
+  h2{font-size:28px;margin:0 0 16px}
+  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:18px;box-shadow:0 1px 2px rgba(2,6,23,.04)}
+  .muted{color:#475569}
+  .features .card h3{margin:0 0 8px}
+  .screens img{width:100%;border-radius:12px;border:1px solid #e2e8f0;background:#fff}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  form{display:grid;gap:12px}
+  input, textarea{padding:12px 12px;border:1px solid #cbd5e1;border-radius:12px;font-size:16px}
+  button{border:0;background:var(--brand);color:white;padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}
+  footer{padding:32px 0;background:#0b1220;color:#cbd5e1}
+  footer a{color:#93c5fd}
+  @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
+  @media (max-width:640px){.grid{grid-template-columns:1fr}.hero h1{font-size:34px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="logo">FundMentor</div>
+      <ul>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#screens">Screenshots</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a class="btn" href="https://fundmentor.streamlit.app/" target="_blank" rel="noopener">Launch App</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap two">
+    <div>
+      <h1>About FundMentor</h1>
+      <p class="muted">FundMentor helps advisors and investors design ETF portfolios with clarity. We focus on two things: sound portfolio construction and client‑ready communication.</p>
+      <h2>What we offer</h2>
+      <ul>
+        <li>Portfolio Builder with transparent guardrails</li>
+        <li>ETF Screener with live, sortable metrics</li>
+        <li>Portfolio Analyzer and Rebalancing Checker</li>
+        <li>Advisor Notes — plain‑language explanations tied to your chosen ETFs</li>
+      </ul>
+      <h2>Who we serve</h2>
+      <ul>
+        <li>Independent advisors and RIAs</li>
+        <li>Asset managers and model portfolio teams</li>
+        <li>Educated DIY investors</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Team</h2>
+      <div class="card">
+        <h3>Saad Bashir — Founder</h3>
+        <p class="muted">Business systems consultant and product builder focused on wealth/asset management technology. FundMentor is his vision for cleaner portfolio design, better client conversations, and practical tools advisors will actually use.</p>
+        <p>Connect on <a href="https://www.linkedin.com/in/saadbashirofficial" target="_blank" rel="noopener">LinkedIn</a>.</p>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p class="muted">For demos and partnerships, use the <a href="/#contact">demo request form</a> or email <a href="mailto:demo@fundmentor.com">demo@fundmentor.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
+      <div>© 2025 FundMentor</div>
+      <div><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
