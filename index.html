@@ -3,194 +3,275 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FundMentor — Smarter Portfolios, Built for Advisors & Investors</title>
-  <meta name="description" content="FundMentor helps advisors build, analyze, and explain ETF portfolios in minutes — with client‑ready notes, screening, drift checks, and tax‑aware tips.">
-  <link rel="icon" type="image/png" href="Favicon.png">
-  <meta property="og:url" content="https://saadbashir91.github.io/FundMentor/">
-  <!-- Open Graph -->
-  <meta property="og:title" content="FundMentor">
-  <meta property="og:description" content="Smarter portfolios for advisors and investors.">
+  <title>FundMentor — Build, Review, and Explain Portfolios with More Clarity</title>
+  <meta name="description" content="FundMentor helps advisors and investors move from ETF ideas to client-ready portfolio decisions with clearer planning, diagnostics, guardrails, and reporting.">
+  <link rel="canonical" href="https://saadbashir91.github.io/FundMentor/">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:title" content="FundMentor — Build, Review, and Explain Portfolios with More Clarity">
+  <meta property="og:description" content="From ETF ideas to client-ready portfolio reviews. FundMentor helps users plan, compare, review, and rebalance portfolios with data-driven logic.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://saadbashir91.github.io/FundMentor/">
-  <meta property="og:image" content="https://saadbashir91.github.io/og-image.png">
-  <!-- JSON-LD -->
+  <meta property="og:image" content="https://saadbashir91.github.io/FundMentor/og-image.png">
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "FundMentor",
-  "operatingSystem": "Web",
-  "applicationCategory": "FinanceApplication",
-  "description": "Advisor-first ETF portfolio builder, screener, analyzer, and client notes assistant.",
-  "url": "https://saadbashir91.github.io/",
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "USD"
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FundMentor",
+    "operatingSystem": "Web",
+    "applicationCategory": "FinanceApplication",
+    "description": "A portfolio planning and review tool that helps users compare ETF ideas, review portfolio fit, and generate clearer client-ready explanations.",
+    "url": "https://saadbashir91.github.io/FundMentor/",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
   }
-}
   </script>
   <style>
-    nav .brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  font-size: 20px;
-  color: #0f172a;
-  text-decoration: none;
-}
-nav .brand img {
-  width: 36px;   /* tweak to 28–40 if you want smaller/larger */
-  height: 36px;
-  border-radius: 6px; /* optional soft corners */
-}
-  :root { --bg:#0b1220; --ink:#0f172a; --text:#0f172a; --muted:#475569; --brand:#2563eb; --brand2:#10b981; --card:#ffffff; }
-  *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;background:#f8fafc}
-  a{color:var(--brand);text-decoration:none}
-  header{position:sticky;top:0;background:#ffffffee;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e2e8f0;z-index:10}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-  nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-  nav .logo{font-weight:800;letter-spacing:.2px}
-  nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
-  nav a.btn{padding:10px 14px;border-radius:10px;background:var(--brand);color:#fff;font-weight:600}
-  .hero{padding:72px 0 36px;background:linear-gradient(180deg,#ffffff, #f1f5f9)}
-  .hero h1{font-size:42px;line-height:1.15;margin:0 0 10px}
-  .hero p{font-size:18px;color:#334155;max-width:680px}
-  .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
-  .cta a{padding:12px 16px;border-radius:12px;font-weight:700}
-  .cta .primary{background:var(--brand);color:#fff}
-  .cta .ghost{border:1px solid #cbd5e1;color:#0f172a}
-  section{padding:56px 0;border-top:1px solid #e2e8f0;background:#fff}
-  h2{font-size:28px;margin:0 0 16px}
-  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-  .card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:18px;box-shadow:0 1px 2px rgba(2,6,23,.04)}
-  .muted{color:#475569}
-  .features .card h3{margin:0 0 8px}
-  .screens img{width:100%;border-radius:12px;border:1px solid #e2e8f0;background:#fff}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  form{display:grid;gap:12px}
-  input, textarea{padding:12px 12px;border:1px solid #cbd5e1;border-radius:12px;font-size:16px}
-  button{border:0;background:var(--brand);color:white;padding:12px 16px;border-radius:12px;font-weight:700;cursor:pointer}
-  footer{padding:32px 0;background:#0b1220;color:#cbd5e1}
-  footer a{color:#93c5fd}
-  @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}}
-  @media (max-width:640px){.grid{grid-template-columns:1fr}.hero h1{font-size:34px}}
-</style>
+    :root { --bg:#0b1220; --ink:#0f172a; --text:#0f172a; --muted:#475569; --brand:#2563eb; --brand2:#10b981; --card:#ffffff; --soft:#eef4ff; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;background:#f8fafc}
+    a{color:var(--brand);text-decoration:none}
+    header{position:sticky;top:0;background:#ffffffee;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #e2e8f0;z-index:10}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    nav .brand {display:flex;align-items:center;gap:10px;font-weight:bold;font-size:20px;color:#0f172a;text-decoration:none}
+    nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+    nav a.btn{padding:10px 14px;border-radius:10px;background:var(--brand);color:#fff;font-weight:600}
+    .hero{padding:76px 0 40px;background:linear-gradient(180deg,#ffffff,#f1f5f9)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .eyebrow{display:inline-block;padding:8px 12px;border-radius:999px;background:var(--soft);color:#1d4ed8;font-weight:700;font-size:13px;margin-bottom:14px}
+    .hero h1{font-size:46px;line-height:1.08;margin:0 0 14px;max-width:760px}
+    .hero p{font-size:18px;color:#334155;max-width:720px;margin:0 0 8px}
+    .mini-list{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0;padding:0;list-style:none}
+    .mini-list li{padding:8px 12px;border:1px solid #dbe6f5;border-radius:999px;background:#fff;color:#334155;font-size:14px}
+    .cta{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+    .cta a{padding:12px 16px;border-radius:12px;font-weight:700}
+    .cta .primary{background:var(--brand);color:#fff}
+    .cta .ghost{border:1px solid #cbd5e1;color:#0f172a;background:#fff}
+    .hero-card{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:20px;box-shadow:0 6px 20px rgba(2,6,23,.06)}
+    .hero-card h3{margin:0 0 10px;font-size:18px}
+    .hero-card p{font-size:15px;color:#475569;margin:0 0 14px}
+    .stat{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .stat .cardlet{padding:14px;border:1px solid #e2e8f0;border-radius:14px;background:#f8fafc}
+    .stat strong{display:block;font-size:20px;margin-bottom:4px}
+    section{padding:58px 0;border-top:1px solid #e2e8f0;background:#fff}
+    h2{font-size:30px;margin:0 0 16px}
+    .lead{font-size:17px;color:#475569;max-width:760px;margin:0 0 22px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+    .card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px;box-shadow:0 1px 2px rgba(2,6,23,.04)}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .muted{color:#475569}
+    .how .step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:999px;background:#e0ecff;color:#1d4ed8;font-weight:800;margin-bottom:10px}
+    .trust{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+    .screens{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+    .screens img{width:100%;border-radius:12px;border:1px solid #e2e8f0;background:#fff}
+    .cta-band{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;border-top:none}
+    .cta-band .card{background:transparent;border:1px solid rgba(255,255,255,.14);box-shadow:none}
+    .cta-band a{color:#fff}
+    .contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
+    footer{padding:32px 0;background:#0b1220;color:#cbd5e1}
+    footer a{color:#93c5fd}
+    @media (max-width:960px){.hero-grid,.screens,.contact-grid,.trust,.grid4{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr 1fr}}
+    @media (max-width:680px){nav ul{display:none}.hero h1{font-size:36px}.hero-grid,.screens,.contact-grid,.trust,.grid,.grid4{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
 <header>
   <div class="wrap">
     <nav>
-      <a href="index.html" class="brand">
-        <span>FundMentor</span>
-      </a>
+      <a href="index.html" class="brand"><span>FundMentor</span></a>
       <ul>
-        <li><a href="index.html#features">Features</a></li>
-        <li><a href="index.html#screens">Screenshots</a></li>
+        <li><a href="#why">Why FundMentor</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#screens">Screenshots</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a class="btn" href="https://fundmentor.streamlit.app/" target="_blank" rel="noopener">Launch App</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn" href="https://fundmentor.streamlit.app/" target="_blank" rel="noopener">Launch Demo</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
 <div class="hero">
-  <div class="wrap">
-    <h1>Smarter ETF Portfolios — Built for Advisors & Investors</h1>
-    <p>From building to explaining, FundMentor helps you construct model portfolios, screen ETFs, analyze drift, and walk into client meetings with a clear narrative.</p>
-    <div class="cta">
-      <a class="primary" href="https://fundmentor.streamlit.app/" target="_blank" rel="noopener">Try the Beta</a>
-      <a class="ghost" href="#contact">Request a Demo</a>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Portfolio planning and review, made clearer</div>
+      <h1>Build, review, and explain portfolios with more clarity.</h1>
+      <p>FundMentor helps advisors and investors move from ETF ideas to client-ready portfolio decisions with data-driven logic, portfolio diagnostics, and clearer reporting.</p>
+      <p>It is designed for people who want more than a screener: clearer fit, better structure, stronger explanations, and a more practical review workflow.</p>
+      <div class="cta">
+        <a class="primary" href="https://fundmentor.streamlit.app/" target="_blank" rel="noopener">Try the Demo</a>
+        <a class="ghost" href="#contact">Request a Demo or Quote</a>
+      </div>
+      <ul class="mini-list">
+        <li>Advisors</li>
+        <li>Wealth teams</li>
+        <li>Model portfolio workflows</li>
+        <li>Serious DIY investors</li>
+      </ul>
+    </div>
+    <div class="hero-card">
+      <h3>What FundMentor helps you do</h3>
+      <p>Move from broad ETF exploration to a more structured planning and review process.</p>
+      <div class="stat">
+        <div class="cardlet"><strong>Plan</strong><span class="muted">Shape allocations and shortlist candidates</span></div>
+        <div class="cardlet"><strong>Ideas</strong><span class="muted">Compare ETFs with clearer context</span></div>
+        <div class="cardlet"><strong>Portfolio</strong><span class="muted">Review strengths, risks, and fit</span></div>
+        <div class="cardlet"><strong>Rebalance</strong><span class="muted">Compare current holdings to target</span></div>
+      </div>
     </div>
   </div>
 </div>
 
-<section id="features" class="features">
+<section id="why">
   <div class="wrap">
-    <h2>What you can do with FundMentor</h2>
+    <h2>Why FundMentor</h2>
+    <p class="lead">Most tools either stop at screening or bury the logic behind the output. FundMentor is built to help users think more clearly about portfolio construction, overlap, concentration, tax fit, and how to explain the result.</p>
     <div class="grid">
       <div class="card">
-        <h3>Portfolio Builder</h3>
-        <p class="muted">Goal- and risk-based allocations with clear guardrails and safer defaults.</p>
+        <h3>Clearer portfolio decisions</h3>
+        <p class="muted">Bring structure to planning with model-building logic, guardrails, shortlist controls, and cleaner implementation thinking.</p>
       </div>
       <div class="card">
-        <h3>Live ETF Screener</h3>
-        <p class="muted">Explore 5000+ ETFs by return, expense ratio, yield, AUM, and more.</p>
+        <h3>Stronger client conversations</h3>
+        <p class="muted">Turn allocations, ETF choices, and diagnostics into plain-English reasoning that is easier to discuss with clients and stakeholders.</p>
       </div>
       <div class="card">
-        <h3>Portfolio Analyzer</h3>
-        <p class="muted">Upload holdings to calculate allocation, performance, and drift.</p>
-      </div>
-      <div class="card">
-        <h3>Rebalancing Checker</h3>
-        <p class="muted">Instantly see where portfolios deviate from target allocation — down to the ETF.</p>
-      </div>
-      <div class="card">
-        <h3>Custom ETF Lists</h3>
-        <p class="muted">Import your own ETF universe and apply FundMentor’s scoring to it.</p>
-      </div>
-      <div class="card">
-        <h3>Advisor Notes</h3>
-        <p class="muted">Plain‑language, client‑ready explanations tied directly to the ETFs you choose.</p>
+        <h3>More practical review workflow</h3>
+        <p class="muted">Look beyond ETF rankings to portfolio character, concentration, overlap, drift, strengths, and watch items.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="screens" class="screens">
-  <div class="wrap two">
+<section id="how" class="how" style="background:#f8fafc">
+  <div class="wrap">
+    <h2>How FundMentor works</h2>
+    <p class="lead">A simple workflow from idea generation to review and action.</p>
+    <div class="grid4">
+      <div class="card">
+        <div class="step-num">1</div>
+        <h3>Plan</h3>
+        <p class="muted">Set the objective, shape the allocation, and create a shortlist that reflects the selected context.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">2</div>
+        <h3>Ideas</h3>
+        <p class="muted">Browse the broader ETF universe while comparing suggested candidates for the current goal, account, and country setup.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">3</div>
+        <h3>Portfolio</h3>
+        <p class="muted">Review strengths, watch items, concentration, overlap, and overall fit using richer diagnostics and notes.</p>
+      </div>
+      <div class="card">
+        <div class="step-num">4</div>
+        <h3>Rebalance</h3>
+        <p class="muted">Compare current holdings to target and see where changes may be needed before implementation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <h2>What you can do with FundMentor</h2>
+    <p class="lead">The current demo is centered on ETFs, with logic designed to support planning, diagnostics, and reporting rather than just screening.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Portfolio planning</h3>
+        <p class="muted">Shape model portfolios with goal-aware logic, clearer sleeve design, and more practical shortlist controls.</p>
+      </div>
+      <div class="card">
+        <h3>ETF comparison</h3>
+        <p class="muted">Review ETFs using return, expense ratio, yield, AUM, tax-aware notes, and recommendation audit trails.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio diagnostics</h3>
+        <p class="muted">Review concentration, overlap, strengths, watch items, and portfolio character to better understand what the portfolio is actually doing.</p>
+      </div>
+      <div class="card">
+        <h3>Rebalancing workflow</h3>
+        <p class="muted">Upload holdings, compare current versus target, and identify drift with cleaner action suggestions.</p>
+      </div>
+      <div class="card">
+        <h3>Custom universes</h3>
+        <p class="muted">Import your own ETF lists and work with a preferred universe instead of being locked into one static list.</p>
+      </div>
+      <div class="card">
+        <h3>Client-ready communication</h3>
+        <p class="muted">Generate clearer notes and reporting for client-facing or advisor-facing use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="screens" style="background:#f8fafc">
+  <div class="wrap screens">
     <div>
-      <h2>Built for real client meetings</h2>
-      <p class="muted">Turn numbers into a narrative: diversification, risk fit, account‑type nudges, and cleaner exports from targets to dollars.</p>
-      <ul>
-        <li>One‑page glidepath with transparent guardrails</li>
-        <li>Optional horizon adjustment</li>
-        <li>Mixed ETFs supported as core or fourth sleeve</li>
-        <li>On‑demand eligibility diagnostics</li>
-      </ul>
+      <h2>Designed for real review conversations</h2>
+      <p class="lead">FundMentor is evolving beyond a simple screener. The product direction is toward clearer planning, more useful diagnostics, and more practical reporting.</p>
+      <div class="trust">
+        <div class="card"><h3>Explainability</h3><p class="muted">Help users understand why a portfolio looks the way it does.</p></div>
+        <div class="card"><h3>Practical guardrails</h3><p class="muted">Use account, country, and implementation-aware logic to make outputs more useful.</p></div>
+        <div class="card"><h3>Session privacy</h3><p class="muted">Portfolio Analyzer and Rebalancing Checker are designed for in-session use without storing portfolio data.</p></div>
+      </div>
     </div>
     <div>
-      <img src="Screenshot1.png" alt="FundMentor portfolio rationale and allocation summary" loading="lazy">
+      <img src="Screenshot1.png" alt="FundMentor planning and rationale view" loading="lazy">
       <br><br>
-      <img src="Screenshot2.png" alt="FundMentor ETF table with fees, income and metrics" loading="lazy">
+      <img src="Screenshot2.png" alt="FundMentor ETF and portfolio review view" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div class="card">
+      <h2 style="color:#fff;margin-bottom:12px">See whether FundMentor fits your workflow.</h2>
+      <p class="lead" style="color:#cbd5e1;max-width:820px">Interested in seeing how FundMentor could support your client conversations and portfolio review process? Reach out for a demo, a quote, or to discuss your use case.</p>
+      <div class="cta">
+        <a class="primary" href="#contact">Request a Demo</a>
+        <a class="ghost" href="https://fundmentor.streamlit.app/" target="_blank" rel="noopener" style="background:transparent;border-color:rgba(255,255,255,.25);color:#fff">Launch Demo</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="wrap two">
+  <div class="wrap contact-grid">
     <div>
       <h2>Request a demo</h2>
-      <p class="muted">Leave your details and we’ll reach out with early‑access options.</p>
-      <!-- Google Form embed (responsive) -->
-      <div style="position:relative;padding-top:0;">
-        <div style="position:relative;overflow:hidden;width:100%;padding-top: 0;">
-          <!-- Google Form embed (responsive) -->
-          <div style="position:relative;overflow:hidden;width:100%;">
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfcpY6nTj8RUwjXm5JHjG-CKkfmXFe_RUsJqC2KDhVtMTVPWw/viewform"
-              width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0"
-              style="border:1px solid #e2e8f0;border-radius:12px;background:#fff;">
-              Loading…
-            </iframe>
-            <p style="margin-top:10px;">
-              <a href="DIRECT_FORM_LINK" target="_blank" rel="noopener" style="text-decoration:underline;">
-                Open the demo request form in a new tab
-              </a>
-            </p>
-          </div>
-          <p class="muted" style="font-size:12px;margin-top:10px">
-            By submitting, you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.
-          </p>
-        </div>
-      </div>
+      <p class="lead">Tell us a little about your team, use case, or workflow and we’ll follow up.</p>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfcpY6nTj8RUwjXm5JHjG-CKkfmXFe_RUsJqC2KDhVtMTVPWw/viewform"
+        width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0"
+        style="border:1px solid #e2e8f0;border-radius:12px;background:#fff;">
+        Loading…
+      </iframe>
+      <p style="margin-top:10px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcpY6nTj8RUwjXm5JHjG-CKkfmXFe_RUsJqC2KDhVtMTVPWw/viewform" target="_blank" rel="noopener" style="text-decoration:underline;">
+          Open the demo request form in a new tab
+        </a>
+      </p>
+      <p class="muted" style="font-size:12px;margin-top:10px">By submitting, you agree to our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.</p>
     </div>
     <div>
-      <h2>Why advisors choose FundMentor</h2>
+      <h2>Who FundMentor is built for</h2>
       <div class="card">
-        <p class="muted">Less prep. More trust. Faster buy‑in. FundMentor is built to give advisors an edge — not just in what they recommend, but in how they explain it.</p>
+        <h3>Advisors and wealth teams</h3>
+        <p class="muted">For professionals who want clearer planning logic, cleaner reviews, and stronger portfolio explanations.</p>
+      </div>
+      <div class="card">
+        <h3>Model portfolio workflows</h3>
+        <p class="muted">For teams who want more structure around ETF comparison, diagnostics, and drift review.</p>
+      </div>
+      <div class="card">
+        <h3>Educated DIY investors</h3>
+        <p class="muted">For users who want more discipline and clarity than a screener alone can provide.</p>
       </div>
       <div class="card">
         <p class="muted">For information and education only. FundMentor does not provide personalized investment advice.</p>
@@ -204,12 +285,11 @@ nav .brand img {
     <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
       <div>© 2025 FundMentor · For information and education only — not investment advice.</div>
       <div>
-        <a href="about.html">About</a> · 
-        <a href="privacy.html">Privacy</a> · 
-        <a href="terms.html">Terms</a> · 
+        <a href="about.html">About</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a> ·
         <a href="faq.html">FAQ</a> ·
         <a href="https://www.linkedin.com/company/fundmentorportfolioplanning/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
       </div>
     </div>
   </div>
