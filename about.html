@@ -4,17 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — FundMentor</title>
-  <meta name="description" content="About FundMentor — our mission, who we serve, and the product philosophy behind our ETF portfolio tools.">
+  <meta name="description" content="Learn what FundMentor is, who it is for, and why it was built to help advisors and investors build, review, and explain portfolios with more clarity.">
   <link rel="canonical" href="https://saadbashir91.github.io/FundMentor/about.html">
   <meta property="og:title" content="About — FundMentor">
-  <meta property="og:description" content="Our mission is clarity: advisor-first ETF portfolios with client-ready explanations. Learn who we serve and how we work.">
+  <meta property="og:description" content="Why FundMentor exists, who it serves, and how it helps turn portfolio work into clearer decisions and better client conversations.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://saadbashir91.github.io/FundMentor/about.html">
   <meta property="og:image" content="https://saadbashir91.github.io/FundMentor/og-image.png">
   <link rel="icon" type="image/png" href="favicon.png">
-
   <style>
-    :root { --bg:#0b1220; --ink:#0f172a; --text:#0f172a; --muted:#475569; --brand:#2563eb; --brand2:#10b981; --card:#ffffff; }
+    :root { --bg:#0b1220; --ink:#0f172a; --text:#0f172a; --muted:#475569; --brand:#2563eb; --card:#ffffff; }
     *{box-sizing:border-box}
     body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0f172a;background:#f8fafc}
     a{color:var(--brand);text-decoration:none}
@@ -23,35 +22,35 @@
     nav{display:flex;align-items:center;justify-content:space-between;height:64px}
     nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
     nav a.btn{padding:10px 14px;border-radius:10px;background:var(--brand);color:#fff;font-weight:600}
-    /* Text-only brand like index */
     nav .brand{display:flex;align-items:center;gap:10px;font-weight:bold;font-size:20px;color:#0f172a !important;text-decoration:none}
     nav .brand:visited, nav .brand:hover, nav .brand:active{color:#0f172a !important;text-decoration:none}
-
-    section{padding:56px 0;border-top:1px solid #e2e8f0;background:#fff}
-    h1{font-size:32px;margin:0 0 10px}
-    h2{font-size:28px;margin:20px 0 12px}
+    .hero{padding:56px 0 24px;background:linear-gradient(180deg,#ffffff,#f8fafc)}
+    h1{font-size:34px;margin:0 0 12px}
+    h2{font-size:26px;margin:0 0 14px}
+    h3{margin:0 0 8px}
+    p, li{line-height:1.65}
     .muted{color:#475569}
+    section{padding:48px 0;border-top:1px solid #e2e8f0;background:#fff}
+    .two{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
     .card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:18px;box-shadow:0 1px 2px rgba(2,6,23,.04)}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .cta a{padding:12px 16px;border-radius:12px;font-weight:700}
+    .cta .primary{background:var(--brand);color:#fff}
+    .cta .ghost{border:1px solid #cbd5e1;color:#0f172a}
     footer{padding:32px 0;background:#0b1220;color:#cbd5e1}
     footer a{color:#93c5fd}
-
-    @media (max-width:900px){.two{grid-template-columns:1fr}}
+    @media (max-width:900px){.two,.grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-
-<!-- Header -->
 <header>
   <div class="wrap">
     <nav>
-      <a href="index.html" class="brand">
-        <span>FundMentor</span>
-      </a>
+      <a href="index.html" class="brand"><span>FundMentor</span></a>
       <ul>
         <li><a href="index.html#features">Features</a></li>
-        <li><a href="index.html#screens">Screenshots</a></li>
+        <li><a href="index.html#workflow">How it works</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="index.html#contact">Contact</a></li>
         <li><a class="btn" href="https://fundmentor.streamlit.app/" target="_blank" rel="noopener">Launch App</a></li>
@@ -60,104 +59,83 @@
   </div>
 </header>
 
-<!-- Content -->
+<div class="hero">
+  <div class="wrap">
+    <h1>Why FundMentor exists</h1>
+    <p class="muted" style="max-width:760px">FundMentor was built to make portfolio work clearer. Not just to surface investments, but to help users think through fit, concentration, overlap, tax awareness, and how to explain a portfolio with confidence.</p>
+    <p class="muted" style="font-size:13px">For information and education only — not investment advice.</p>
+  </div>
+</div>
+
 <section>
   <div class="wrap two">
-    <!-- Left column -->
     <div>
-      <h1>About FundMentor</h1>
+      <h2>What FundMentor is</h2>
+      <p class="muted">FundMentor is a portfolio planning and review application designed for advisors, wealth teams, and serious investors who want more structure in how they build, review, and explain portfolios.</p>
+      <p class="muted">The current version focuses on ETFs, with support for model building, idea generation, portfolio diagnostics, and rebalancing. The broader direction is to apply the same type of data-driven logic across more investment products over time.</p>
 
-      <!-- Mission -->
-      <h2>Our Mission</h2>
-      <p class="muted">
-        To give financial advisors and investors clarity. FundMentor turns complex ETF data into simple, client-ready portfolios — transparent, educational, and easy to explain.
-      </p>
-      <p class="muted" style="font-size:13px">For information and education only — not investment advice.</p>
+      <h2>Why it was built</h2>
+      <p class="muted">A lot of investment tools do one of two things: they either look polished but stay shallow, or they are powerful but hard to interpret in real conversations. FundMentor was built to bridge that gap.</p>
+      <p class="muted">The goal is not only to help users find ideas. It is to help them understand what a portfolio is doing, where it is strong, where it deserves attention, and how to speak about it more clearly.</p>
 
-      <h2>Our Story</h2>
-      <p class="muted">
-        FundMentor started with a simple observation: advisors were choosing between tools that looked pretty but lacked depth, and platforms that were powerful but hard to explain to clients. After more than a decade delivering wealth, asset-management, and capital-markets technology, we set out to build something different — professional-grade portfolio tools that are clear, practical, and client-ready.
-      </p>
-      <p class="muted">
-        From the first prototype, we focused on what matters in meetings: transparent allocations, plain-English rationale, and the numbers clients ask about — fees, income, and risk. Equally important, we designed FundMentor to respect privacy: the Portfolio Analyzer and Rebalancing Checker run in-session only, and we do not store your portfolio data.
-      </p>
-      <p class="muted">
-        Today, FundMentor supports U.S. and Canadian ETFs, with stock coverage and richer reporting on the way. If this resonates, we’d love to show you more — please <a href="index.html#contact">request a demo</a> and tell us what you’re solving for.
-      </p>
-
-      <!-- What we offer (kept) -->
-      <h2>What we offer</h2>
-      <ul>
-        <li>Portfolio Builder with transparent guardrails</li>
-        <li>ETF Screener with live, sortable metrics</li>
-        <li>Portfolio Analyzer and Rebalancing Checker</li>
-        <li>Advisor Notes — plain-language explanations tied to your chosen ETFs</li>
-      </ul>
-
-      <!-- How it works -->
       <h2>How it works</h2>
       <ul class="muted">
-        <li><strong>Build</strong> — Goal-based allocations with ETF recommendations.</li>
-        <li><strong>Analyze</strong> — Portfolio metrics, fees, income, and drift checks.</li>
-        <li><strong>Explain</strong> — Plain-language notes for client conversations.</li>
+        <li><strong>Plan</strong> — shape an allocation and build a shortlist with clearer guardrails.</li>
+        <li><strong>Ideas</strong> — compare candidates and explore the broader ETF universe.</li>
+        <li><strong>Portfolio</strong> — review strengths, watch items, overlap, concentration, and fit.</li>
+        <li><strong>Rebalance</strong> — compare current holdings to target and identify what needs attention.</li>
       </ul>
 
-      <!-- Who we serve (kept, tightened) -->
-      <h2>Who we serve</h2>
-      <ul>
-        <li>Independent advisors and RIAs</li>
-        <li>Asset managers and model portfolio teams</li>
-        <li>Educated DIY investors</li>
-      </ul>
+      <div class="cta">
+        <a class="primary" href="https://fundmentor.streamlit.app/" target="_blank" rel="noopener">Try the Demo</a>
+        <a class="ghost" href="index.html#contact">Request a Demo</a>
+      </div>
     </div>
 
-    <!-- Right column -->
     <div>
-      <h2>Team</h2>
       <div class="card">
-        <h3>Saad Bashir — Founder</h3>
-        <p class="muted">
-          Saad brings over a decade of experience in financial services, specializing in wealth management, asset management, and capital markets technology. 
-          He has led large-scale initiatives in portfolio management systems, regulatory compliance, and digital transformation, working at the intersection of business strategy and technology delivery. 
-          FundMentor is the product of that experience — designed to give advisors professional-grade tools that are simple, practical, and client-ready.
-        </p>
-        <p>
-          Connect on <a href="https://www.linkedin.com/in/saad-bashir/" target="_blank" rel="noopener">LinkedIn</a>.
-        </p>
-
-      <!-- Data & Privacy -->
-      <div class="card">
-        <h3>Data &amp; Privacy</h3>
-        <p class="muted">
-          FundMentor does <strong>not store any portfolio data</strong>. All analysis in the <em>Portfolio Analyzer</em> and <em>Rebalancing Checker</em> runs only in your session and disappears when you leave the app.
-        </p>
-      </div>
-
-      <!-- Roadmap -->
-      <div class="card">
-        <h3>Roadmap</h3>
+        <h3>Who it is for</h3>
         <ul class="muted">
-          <li>Stock coverage — coming soon</li>
-          <li>Saved model portfolios</li>
-          <li>Enhanced reporting &amp; exports</li>
+          <li>Independent advisors and RIAs</li>
+          <li>Wealth teams and model portfolio groups</li>
+          <li>Asset managers exploring structured portfolio logic</li>
+          <li>Serious DIY investors who want more than a screener</li>
         </ul>
       </div>
 
-      <!-- Contact -->
       <div class="card">
-        <h3>Contact</h3>
-        <p class="muted">
-          For demos and partnerships, please use the
-          <a href="index.html#contact">demo request form</a>.
-          <br><br>
-          See also our <a href="faq.html">FAQ</a> for common questions.
-        </p>
+        <h3>What makes it different</h3>
+        <p class="muted">FundMentor is not just trying to rank products. It is designed to help users think through allocation, suitability, diagnostics, and explanation in one flow.</p>
+      </div>
+
+      <div class="card">
+        <h3>Data &amp; privacy</h3>
+        <p class="muted">Portfolio data used in the Portfolio and Rebalance workflows is processed in-session and is not stored by FundMentor.</p>
+      </div>
+
+      <div class="card">
+        <h3>Roadmap</h3>
+        <ul class="muted">
+          <li>Broader investment coverage beyond ETFs</li>
+          <li>Richer reporting and exports</li>
+          <li>More workflow support for advisor use cases</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
+<section>
+  <div class="wrap">
+    <h2>Founder</h2>
+    <div class="card">
+      <h3>Saad Bashir</h3>
+      <p class="muted">FundMentor draws on more than a decade of experience across wealth management, asset management, capital markets, and financial technology delivery. The product is being built from the perspective that better portfolio tools should not only support analysis, but also improve clarity, structure, and decision quality.</p>
+      <p><a href="https://www.linkedin.com/in/saad-bashir/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
@@ -172,6 +150,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 </html>
